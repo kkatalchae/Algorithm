@@ -2,7 +2,7 @@ package sorting;
 
 import java.util.Arrays;
 
-public class InsertionSort {
+public class InsertionSort extends Sort{
     /*
     삽입 정렬
     - 현재 타겟이 된느 숫자와 이전 위치에 있는 원소들을 비교한다. ( 첫 번째 타겟은 두 번째 원소부터 시작한다. )
@@ -10,11 +10,6 @@ public class InsertionSort {
     - 그 다음 타겟을 찾아 위와 같은 방법을 반복한다.
      */
 
-    public static void swap(int[] arr, int idx1, int idx2){
-        int temp = arr[idx1];
-        arr[idx1] = arr[idx2];
-        arr[idx2] = temp;
-    }
 
     // 오름차순 정렬
     private static void insertionSort(int[] arr){

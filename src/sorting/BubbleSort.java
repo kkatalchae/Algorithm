@@ -3,7 +3,7 @@ package sorting;
 import java.util.Arrays;
 import java.util.List;
 
-public class BubbleSort {
+public class BubbleSort extends Sort{
 
     /*
     버블 정렬
@@ -11,13 +11,6 @@ public class BubbleSort {
     배열의 처음부터 끝까지 인접한 요소를 비교하는 과정을 n - 1번 반복
     O(n^2)의 시간 복잡도를 가짐
      */
-
-    // 자리를 바꿔주는 스왑 메소드
-    private static void swap(int[] arr, int index1, int index2){
-        int temp = arr[index1];
-        arr[index1] = arr[index2];
-        arr[index2] = temp;
-    }
 
     // 오름차순 정렬
     private static void bubbleSort(int[] arr){

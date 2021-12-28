@@ -2,7 +2,7 @@ package sorting;
 
 import java.util.Arrays;
 
-public class SelectionSort {
+public class SelectionSort extends Sort{
     /*
     선택 정렬 알고리즘
     주어진 원소 중 가장 작은 값을 찾는다.
@@ -11,12 +11,6 @@ public class SelectionSort {
     이 과정을 배열이 끝날 때까지 반복한다.
      */
 
-    // 가장 기초적인 원소의 값을 바꿔주는 메소드
-    private static void swap(int[] array, int index1, int index2){
-        int temp = array[index1];
-        array[index1] = array[index2];
-        array[index2] = temp;
-    }
 
     // 선택 정렬을 수행하는 메소드
     private static void selectionSort (int[] array){
